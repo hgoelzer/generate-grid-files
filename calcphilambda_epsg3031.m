@@ -3,6 +3,8 @@
 % Following Snyder p. 162
 % Heiko Goelzer, 2022 (heig@norceresearch.no)
 
+res=10
+
 n1=6081;
 nx=(n1-1)/res+1;
 phideg=71.;
@@ -124,10 +126,10 @@ ncwriteatt(af2_file_name,'/','Description','Area scaling factor (af2) for ISMIP6
 mapping = 'mapping';
 nccreate(af2_file_name,'mapping','Datatype','char');
 ncwriteatt(af2_file_name,'mapping', 'ellipsoid', 'WGS84') ;
-ncwriteatt(af2_file_name,'mapping', 'false_easting', '0.') ;
-ncwriteatt(af2_file_name,'mapping', 'false_northing', '0.') ;
+ncwriteatt(af2_file_name,'mapping', 'false_easting', 0.) ;
+ncwriteatt(af2_file_name,'mapping', 'false_northing', 0.) ;
 ncwriteatt(af2_file_name,'mapping', 'grid_mapping_name', 'polar_stereographic') ;
-ncwriteatt(af2_file_name,'mapping', 'latitude_of_projection_origin', '-90.') ;
-ncwriteatt(af2_file_name,'mapping', 'standard_parallel', '-71.') ;
-ncwriteatt(af2_file_name,'mapping', 'straight_vertical_longitude_from_pole', '0') ;
+ncwriteatt(af2_file_name,'mapping', 'latitude_of_projection_origin', -90.) ;
+ncwriteatt(af2_file_name,'mapping', 'standard_parallel', -71.) ;
+ncwriteatt(af2_file_name,'mapping', 'straight_vertical_longitude_from_pole', 0.) ;
 
