@@ -7,12 +7,12 @@
 %% Resolution in km
 
 %res=1;
-res=2;
-res=4;
-res=8;
+%res=2;
+%res=4;
+%res=8;
 res=16;
-res=32;
-res=64;
+%res=32;
+%res=64;
 
 %%%%%% Projection settings %% This is EPSG 3031 CISM AIS grid
 
