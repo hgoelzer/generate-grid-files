@@ -22,8 +22,8 @@ calcphilambda_epsg3031.m
 - wnc.m
 
 
-The netcdf files can be compressed to reduce the file size; in some cases more than a factor 2 
-meta_compress.sh
+The netcdf files can be compressed to reduce the file size; in some cases more than a factor 2:
+- meta_compress.sh
 
 ## Example for conservative interpolation with cdo
 cdo remapycon,grid_ISMIP6_AIS_20000m.nc -setgrid,grid_ISMIP6_AIS_32000m.nc test/bmba_32km.nc test/bmba_20km.nc
